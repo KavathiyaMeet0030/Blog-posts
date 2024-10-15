@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Roboto+Slab:wght@100..900&display=swap"
         rel="stylesheet">
     <style>
+        .sidebackground{
+            background-color: rgba(17, 24, 39, 1);
+        }
         body {
             margin: 0;
             padding: 0;
@@ -42,7 +45,7 @@
             background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
         }
         .main-btn{
-            background-color: #282120;
+            background-color: rgba(17, 24, 39, 1);
             text-decoration: none;
             color: white;
             padding: 8px 16px;
@@ -58,7 +61,7 @@
         <div class="container-fluid">
             <a class="navbar-brand " href="#"><b>KAVATHIYA</b></a>
             <div>
-                <a href="/login" class="main-btn">LOGIN</a>
+                <!-- <a href="/login" class="main-btn">LOGIN</a> -->
                 <a href="/logout" class="main-btn">LogOut</a>
             </div>
         </div>
@@ -66,19 +69,37 @@
 
     <!-- Sidebar and Main Content -->
     <div class="d-flex">
-        <div class="sidebar bg-dark p-3 text-white">
+        <div class="sidebar sidebackground p-3 text-white">
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">Dashboard</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link text-white" href="/viewTopic">ViewTopic</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link text-white" href="/addblog">Add Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Users</a>
+                    <a class="nav-link text-white" href="/allBlogs">All Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/viewblogs">My Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/addtopic">Add Topic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/addSubtopic">Add SubTopic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/changepass">Change Password</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/logout">LogOut</a>
                 </li>
             </ul>
         </div>

@@ -19,7 +19,7 @@ app.set('view engine', 'ejs');
 app.use(require('express-session')({ secret: 'meet', resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
-
+app.use('/uploadsFile', express.static(path.join(__dirname, 'uploadsFile')));
 
 app.use(express.static(mypath));
 

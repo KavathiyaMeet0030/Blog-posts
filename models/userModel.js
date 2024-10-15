@@ -20,7 +20,7 @@ const messageSchema = new mongoose.Schema({
 })  
 
 
-const msg = mongoose.model('users', messageSchema);
+const userModel = mongoose.model('users', messageSchema);
 
-module.exports = msg;                                                                                                                                                                               
+module.exports = userModel;                                                                                                                                                                               
 
